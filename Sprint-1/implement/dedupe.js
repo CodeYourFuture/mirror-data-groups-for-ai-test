@@ -3,7 +3,7 @@ function dedupe(elements) {
     return [];
   }
 
-  return [...new Set(elements)];
+  return elements.filter((item, index) => elements.indexOf(item) === index);
 }
 
 module.exports = dedupe;

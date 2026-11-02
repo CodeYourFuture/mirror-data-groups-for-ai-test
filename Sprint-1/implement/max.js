@@ -6,7 +6,7 @@ function findMax(elements) {
     return typeof number === "number";
   });
   if (elementLists.length === 0) {
-    return 0;
+    return undefined;
   }
   if (elementLists.length === 1) {
     return elementLists[0];
@@ -19,4 +19,5 @@ function findMax(elements) {
   }
   return max;
 }
+console.log(findMax([-1, 0, -2]));
 module.exports = findMax;
