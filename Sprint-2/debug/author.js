@@ -21,10 +21,3 @@ console.log(Object.values(author));
 // for (const value of author) {
 //   console.log(value);
 // }
-
-//alternative:
-let authorValues = [];
-for (const value of Object.values(author)) {
-  authorValues.push(value);
-}
-console.log(authorValues);

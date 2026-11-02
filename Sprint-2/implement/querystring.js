@@ -17,7 +17,7 @@ function parseQueryString(queryString) {
   const keyValuePairs = queryString.split("&");
 
   //filter out empty strings from the keyValuePairs array of strings
-  const filteredKeyValuePairs = keyValuePairs.filter(
+  let filteredKeyValuePairs = keyValuePairs.filter(
     (keyValuePair) => keyValuePair.length > 0
   );
 

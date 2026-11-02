@@ -14,6 +14,17 @@ const recipe = {
 // const recipeKeys = Object.keys(recipe)
 // // console.log(recipeKeys)
 
+const recipeValues = Object.values(recipe);
+//  ["bruschetta", 2, ["olive oil", "tomatoes", "salt", "pepper"]]
+
+const ingredients = recipeValues.slice(-1)[0];
+// ["olive oil","tomatoes","salt","pepper"]
+
+//create a function to log line by line the elements of an array
+function logItemised(items) {
+  return items.join("\n");
+}
+
 console.log(
-  `${recipe.title} serves ${recipe.serves}${"\n"}ingredients:${"\n"}${recipe.ingredients.join("\n")}`
+  `${recipe.title} serves ${recipe.serves}${"\n"}ingredients:${"\n"}${logItemised(ingredients)}`
 );

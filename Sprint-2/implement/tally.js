@@ -1,9 +1,9 @@
 function tally(array) {
-  if (!Array.isArray(array)) {
+  if (typeof array === "string") {
     throw new Error("Input should be an array");
   }
 
-  const tallySet = {};
+  let tallySet = {};
 
   for (let item of array) {
     if (!tallySet[item]) {
